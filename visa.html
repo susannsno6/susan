@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Visa & Contact Info</title>
+  <link rel="stylesheet" href="visa.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Visa Info Susan Shakya</h1>
+    <form id="visaForm">
+
+      <label for="visaOption">Visa Reason:</label>
+      <select id="visaOption" name="visaOption" required>
+        <option value="">Select visa option</option>
+        <option value="tourist">Tourist</option>
+        <option value="business">Business</option>
+        <option value="student">Student</option>
+        <option value="work">Work</option>
+      </select>
+
+      <label for="contactNumber">Contact Number:</label>
+      <input type="tel" id="contactNumber" name="contactNumber" placeholder="+977-XXXXXXXXXX" required />
+
+      <label for="emailAddress">Email Address:</label>
+      <input type="email" id="emailAddress" name="emailAddress" placeholder="example@mail.com" required />
+
+      <label for="occupation">Occupation:</label>
+      <select id="occupation" name="occupation" required>
+        <option value="">Select occupation</option>
+        <option value="Retired">Retired</option>
+        <option value="House wife">House wife</option>
+        <option value="Business">Business</option>
+        <option value="Student">Student</option>
+        <option value="PVT job">PVT job</option>
+        <option value="Doctor">Doctor</option>
+        <option value="Journalist">Journalist</option>
+        <option value="Streamer">Streamer</option>
+        <option value="Pilot">Pilot</option>
+        <option value="Engineer">Engineer</option>
+        <option value="Others">Others</option>
+      </select>
+
+      <label for="homeAddress">Address of Your Country:</label>
+      <input type="text" id="homeAddress" name="homeAddress" placeholder="Home Country Address" required />
+
+      <label for="nepalAddress">Nepal Address:</label>
+      <input type="text" id="nepalAddress" name="nepalAddress" placeholder="Local Address in Nepal" required />
+
+      <label for="visadays">Visa Duration:</label>
+      <select id="visadays" name="visadays" required>
+        <option value="">Select visa duration</option>
+        <option value="15">15 Days</option>
+        <option value="30">30 Days</option>
+        <option value="90">90 Days</option>
+      </select>
+
+      <button type="submit">Confirm</button>
+    </form>
+  </div>
+
+  <script src="visa.js"></script>
+</body>
+</html>

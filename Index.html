@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Passport Photo Interface</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Susan Shakya</h1>
+    <p>prototype</p>
+
+    <div class="passport-box" id="previewBox">
+      Passport Size
+    </div>
+
+    <div class="button-group">
+      <button class="btn scan" id="scanBtn">Scan</button>
+      <button class="btn manual" id="proceedManualBtn">Proceed Manually</button>
+    </div>
+
+    <input type="file" id="fileInput" accept="image/*" style="display: none;" />
+  </div>
+
+  <!-- OCR Library -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
